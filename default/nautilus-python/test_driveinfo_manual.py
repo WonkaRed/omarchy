@@ -159,11 +159,11 @@ def check_never_raises():
 
 
 if __name__ == "__main__":
-    for dev in ("/dev/sdb", "/dev/sdd", "/dev/nvme0n1", "/dev/sda"):
+    for dev in ("/dev/sdb", "/dev/sdc", "/dev/nvme0n1", "/dev/sda"):
         check_device(dev)
 
     check_usb_direct_attach_address("/dev/sdb", "1-")
-    check_usb_direct_attach_address("/dev/sdd", "1-")
+    check_usb_direct_attach_address("/dev/sdc", "1-")
     check_usb_hub_address_parsing()
     check_weakref_on_liststore()
     check_regular_file("/etc/hostname")
